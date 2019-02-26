@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link  rel="stylesheet" href="{% static 'css/style.css' %}">
+    <meta charset="UTF-8">
+    {% block title %}
+    {% endblock %}
+</head>
+<body>
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="profile.html"></a></p>
+          <h5 class="centered">Romain Bouyx</h5>
+          <li class="mt">
+            <a class="active" href="index.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Accueil</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-desktop"></i>
+              <span>Voir tous</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-cogs"></i>
+              <span>SpiderShot</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-book"></i>
+              <span>StrafeTrack</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-tasks"></i>
+              <span>FreeTrack</span>
+              </a>
+          </li>
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-th"></i>
+              <span>MultiShots</span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    {% block content %}
+    {% endblock %}
+{#    <section id="container">#}
+{#        <section id="main-content">#}
+{#            <section class="wrapper">#}
+{#                <div class="row">#}
+{#                    <div class="col-lg-9 main-chart">#}
+{#                        <div class="row">#}
+{#                            <div class="col-lg-4 col-md-4 col-sm-4 mb">#}
+{#                                <div class="product-panel-2 pn">#}
+{#                                    <div class="badge badge-hot">HOT</div>#}
+{#                                    <img src="{% static "assert/excel2.png"%}" width="200" alt="">#}
+{#                                    <h5 class="mt">Flat Pack Heritage</h5>#}
+{#                                    <h6>TOTAL SALES: 1388</h6>#}
+{#                                    <button class="btn btn-small btn-theme04">FULL REPORT</button>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                            <div class="col-lg-4 col-md-4 col-sm-4 mb">#}
+{#                                <div class="product-panel-2 pn">#}
+{#                                    <div class="badge badge-hot">HOT</div>#}
+{#                                    <img src="img/product.jpg" width="200" alt="">#}
+{#                                    <h5 class="mt">Flat Pack Heritage</h5>#}
+{#                                    <h6>TOTAL SALES: 1388</h6>#}
+{#                                    <button class="btn btn-small btn-theme04">FULL REPORT</button>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </section>#}
+{#        </section>#}
+{#    </section>#}
+</body>
+</html>
